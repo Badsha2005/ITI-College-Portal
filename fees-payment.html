@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Fees Payment</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(
+        45deg,
+        #ff0057,
+        #00c3ff,
+        #ffeb3b,
+        #00ff95,
+        #ff0057
+      );
+      background-size: 300% 300%;
+      animation: gradientAnimation 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .payment-container {
+      width: 400px;
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .payment-container h2 {
+      color: #4e54c8;
+      margin-bottom: 25px;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    input:focus, select:focus {
+      border-color: #f06;
+      box-shadow: 0 0 10px rgba(255, 0, 150, 0.7);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4e54c8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f06;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="payment-container">
+    <h2>Fees Payment</h2>
+    <form>
+      <input type="text" placeholder="Registration Number" required />
+      <select required>
+        <option value="">-- Select Payment Mode --</option>
+        <option value="upi">UPI</option>
+        <option value="netbanking">Net Banking</option>
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+      </select>
+      <input type="number" placeholder="Amount in ₹" required />
+      <button type="submit">Pay Now</button>
+    </form>
+    <p class="note">* Make sure your details are correct before submitting.</p>
+  </div>
+</body>
+</html>

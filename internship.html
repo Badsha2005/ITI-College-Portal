@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Internship Opportunities</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+      color: #333;
+    }
+    header {
+      position: relative;
+      top: 0;
+      }
+      .main-body {
+      margin-top: 10px;
+    }
+
+    .header-heading {
+      text-align: center;
+      padding: 40px 20px 20px;
+      color: #fff;
+      background: #4e54c8;
+      border-bottom: 5px solid #8f94fb;
+    }
+
+    .header-heading h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #4e54c8;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .card label {
+      background: #4e54c8;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* Modal toggle */
+    #modal-toggle {
+      display: none;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #modal-toggle:checked ~ .overlay {
+      display: flex;
+    }
+
+    .form-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 500px;
+      position: relative;
+    }
+
+    .form-box h2 {
+      margin-bottom: 20px;
+      color: #4e54c8;
+      text-align: center;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .form-box button {
+      background: #4e54c8;
+      color: white;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .form-box button:hover {
+      background: #6c63ff;
+    }
+
+    .close-label {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 22px;
+      color: #999;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <!-- <div class="logo-icon"></div> -->
+        <div class="logo-text">Barasat Govt ITI</div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="available-course.html">Available Courses</a></li>
+            <li><a href="internship.html">Internships</a></li>
+            <li><a href="fees-payment.html">Fees Payment</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="AdminLogin.html">College Login</a></li>
+        </ul>
+    </nav>
+    <a href="Login.html"><button class="join-button">Join Now</button></a>
+</header>
+<section class="main-body"> <div class="header-heading">
+    <h1>Apply for Internships</h1>
+    <p>Find opportunities with top companies and launch your career</p>
+  </div>
+
+  <input type="checkbox" id="modal-toggle" />
+  
+  <div class="grid">
+    <div class="card"><h3>Google</h3><p>Frontend Developer Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>Microsoft</h3><p>Software Engineer Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>Amazon</h3><p>Data Analyst Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>Infosys</h3><p>Cloud Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>TCS</h3><p>Cybersecurity Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>Wipro</h3><p>AI/ML Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>Zoho</h3><p>Web Development Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>Flipkart</h3><p>Backend Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>IBM</h3><p>Blockchain Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>Accenture</h3><p>IT Support Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>Capgemini</h3><p>Database Intern</p><label for="modal-toggle">Apply Now</label></div>
+    <div class="card"><h3>Adobe</h3><p>UI/UX Design Intern</p><label for="modal-toggle">Apply Now</label></div>
+  </div>
+
+  <div class="overlay">
+    <div class="form-box">
+      <label for="modal-toggle" class="close-label">&times;</label>
+      <h2>Internship Application Form</h2>
+      <form action="submit_internship.php" method="post">
+        <input type="text" name="student_name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="roll" placeholder="Roll Number" required />
+        <input type="text" name="course" placeholder="Your Course" required />
+        <input type="text" name="company" placeholder="Company Name" required />
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</section>
+ 
+</body>
+</html>

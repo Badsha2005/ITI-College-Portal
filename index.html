@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barasat Government ITI College Portal</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- <div class="logo-icon"></div> -->
+            <div class="logo-text">Barasat Govt ITI</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="available-course.html">Available Courses</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="fees-payment.html">Fees Payment</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="AdminLogin.html">College Login</a></li>
+            </ul>
+        </nav>
+        <a href="Login.html"><button class="join-button">Join Now</button></a>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Build Your Future with Barasat Government ITI College</h1>
+            <p>Join a nationally recognized institute to master hands-on skills, earn government-certified training, and unlock career opportunities in top industries.</p>
+            <div class="hero-buttons">
+                <button class="join-button" onclick="location.href='available-course.html'">Explore Courses</button>
+                <button class="secondary-button" onclick="location.href='#about'">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="blob"></div>
+            <div class="collage-img">
+                <img src="data:image/jpeg;base64,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" alt="collage-img">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="competition-section" id="opportunities">
+        <div class="section-header">
+            <h2>Featured Opportunities</h2>
+            <p>Explore top training programs, workshops, and job fairs offered by Barasat Government ITI</p>
+        </div>
+        <div class="competition-cards">
+            <div class="competition-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1581091870622-2fda0d182785?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Skill Workshop">
+                    <div class="card-tag">Workshop</div>
+                </div>
+                <div class="card-content">
+                    <h3>Advanced Welding Techniques</h3>
+                    <p>Hands-on training workshop with industry experts. Certification provided by NSDC.</p>
+                    <div class="card-meta">
+                        <span>Date: May 25</span>
+                        <span>Seats: 50</span>
+                    </div>
+                    <button class="card-button">Register Now</button>
+                </div>
+            </div>
+    
+            <div class="competition-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Job Fair">
+                    <div class="card-tag">Job Fair</div>
+                </div>
+                <div class="card-content">
+                    <h3>Government Job Recruitment Drive</h3>
+                    <p>Multiple government organizations are hiring skilled ITI graduates. On-spot interviews included.</p>
+                    <div class="card-meta">
+                        <span>Date: June 10</span>
+                        <span>Companies: 15+</span>
+                    </div>
+                    <button class="card-button">Apply Now</button>
+                </div>
+            </div>
+    
+            <div class="competition-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1573164574397-0bde60b66084?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Skill Course">
+                    <div class="card-tag">Training</div>
+                </div>
+                <div class="card-content">
+                    <h3>Electrician Skill Enhancement Program</h3>
+                    <p>Boost your technical knowledge with this 2-week intensive course. Includes project-based learning.</p>
+                    <div class="card-meta">
+                        <span>Starts: July 5</span>
+                        <span>Duration: 14 Days</span>
+                    </div>
+                    <button class="card-button">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Barasat 1 Government ITI College, located in the North 24 Parganas district of West Bengal, is a government-run technical training institution affiliated with NCVT (National Council for Vocational Training).
+        </p>
+        <p>
+          The institute is dedicated to providing high-quality vocational education and skill development to empower the youth of the region. With a range of certified ITI courses, state-of-the-art infrastructure, and experienced faculty, Barasat 1 Govt. ITI prepares students for careers in modern industries and services.
+        </p>
+        <p>
+          Our mission is to enhance employability by offering hands-on training and developing a technically skilled workforce to support the industrial growth of the state and nation.
+        </p>
+      </section>
+      <section class="features-section" id="features">
+        <div class="section-header">
+            <h2>Why Choose Barasat Govt ITI</h2>
+            <p>Empowering students with hands-on skills, certifications, and job-ready training</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <h3>Government Certified Courses</h3>
+                <p>Recognized by NCVT/SCVT, our programs provide nationally valid certifications for better job prospects.</p>
+            </div>
+    
+            <div class="feature-card">
+                <div class="feature-icon">🏭</div>
+                <h3>Industry-Ready Training</h3>
+                <p>Curriculum designed in collaboration with industry partners to match real-world requirements.</p>
+            </div>
+    
+            <div class="feature-card">
+                <div class="feature-icon">💼</div>
+                <h3>Placement Assistance</h3>
+                <p>We provide strong placement support and connect students with top recruiters and job fairs.</p>
+            </div>
+    
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>Practical Lab Facilities</h3>
+                <p>State-of-the-art labs and workshops ensure hands-on learning in your trade of choice.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="countdown-section">
+        <h2>Don't Miss Out!</h2>
+        <p>The next major competition begins soon. Register now to secure your spot.</p>
+        <div class="countdown-timer">
+            <div class="countdown-item">
+                <div class="countdown-number">12</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number">08</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number">45</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number">30</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+    </section>
+    <section class="affiliated-section" id="affiliations">
+        <div class="section-header">
+          <h2>Our Affiliated Bodies</h2>
+          <p>Recognized and approved by top national and state authorities in technical education and skill development.</p>
+        </div>
+      
+        <div class="affiliated-grid">
+      
+          <!-- NCVT -->
+          <div class="affiliated-card">
+            <img src="https://d13loartjoc1yn.cloudfront.net/article/1684487729_NCVT%20Full%20Form%20.jpg" alt="NCVT Logo" />
+            <h3>NCVT</h3>
+            <p>National Council for Vocational Training (NCVT), Ministry of Skill Development and Entrepreneurship.</p>
+          </div>
+      
+          <!-- DGT -->
+          <div class="affiliated-card">
+            <img src="https://ncvtmis.gov.in/Images/img_SkillIndia.jpg" alt="DGT Logo" />
+            <h3>DGT</h3>
+            <p>Directorate General of Training (DGT), for overseeing industrial training and skill development in India.</p>
+          </div>
+      
+          <!-- WBSCVT -->
+          <div class="affiliated-card">
+            <img src="./Img/wbscvt.png" alt="WBSCVT Logo" />
+            <h3>WBSCVT</h3>
+            <p>West Bengal State Council for Vocational Training – the state authority for ITI education and certification.</p>
+          </div>
+      
+          <!-- NSDC -->
+          <div class="affiliated-card">
+            <img src="https://www.presentations.gov.in/wp-content/uploads/2020/06/NSDC-Preview.png" alt="NSDC Logo" />
+            <h3>NSDC</h3>
+            <p>National Skill Development Corporation – enabling skill development through vocational partnerships.</p>
+          </div>
+      
+        </div>
+      </section>
+      
+<a href="enquiry-form.html" class="enquiry-btn">Enquery</a>
+<a href="#top" class="back-to-top">⬆</a>
+
+
+<footer id="contact">
+    <div class="footer-grid">
+      
+      <!-- College Info -->
+      <div class="footer-column">
+        <h3>Barasat Government ITI</h3>
+        <p>A recognized government institute dedicated to skill development, technical education, and career building for aspiring professionals.</p>
+        <div class="social-links">
+          <a href="tel:+911234567890" title="Call Us"><i>📱</i></a>
+          <a href="https://www.facebook.com/Barasat1govtITIOfficial/" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f" style="font-size: 20px; color: #3b5998;"></i>
+          </a>
+          <a href="mailto:bgiti@gmail.com" title="Email Us"><i>✉️</i></a>
+        </div>
+      </div>
+  
+      <!-- Useful Links -->
+      <div class="footer-column">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="notice.html">Notices</a></li>
+          <li><a href="#">Admission</a></li>
+          <li><a href="#">Placement Cell</a></li>
+          <li><a href="#">Industrial Training</a></li>
+        </ul>
+      </div>
+  
+      <!-- Campus Activities -->
+      <div class="footer-column">
+        <h3>Campus Life</h3>
+        <ul>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">Sports & Recreation</a></li>
+          <li><a href="#">Student Clubs</a></li>
+        </ul>
+      </div>
+  
+      <!-- About & Policy -->
+      <div class="footer-column">
+        <h3>Institute</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="available-course.html">Courses Offered</a></li>
+          <li><a href="enquiry-form.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2016 - 2025 Barasat Government ITI College. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

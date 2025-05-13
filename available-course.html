@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Available ITI Courses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #333;
+    }
+    header {
+      position: relative;
+      top: 0;
+      }
+      .main-body {
+      margin-top: 10px;
+    }
+
+    .header-heading {
+      background-color: #2e3a59;
+      color: white;
+      text-align: center;
+      padding: 40px 20px 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card h3 {
+      margin-top: 0;
+      color: #2e3a59;
+      font-size: 22px;
+    }
+
+    .course-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <!-- <div class="logo-icon"></div> -->
+        <div class="logo-text">Barasat Govt ITI</div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="available-course.html">Available Courses</a></li>
+            <li><a href="internship.html">Internships</a></li>
+            <li><a href="fees-payment.html">Fees Payment</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="AdminLogin.html">College Login</a></li>
+        </ul>
+    </nav>
+    <a href="Login.html"><button class="join-button">Join Now</button></a>
+</header>
+<section class="main-body">
+ <div class="header-heading">
+    <h1>Available ITI Courses</h1>
+    <p>Explore government-recognized technical and vocational training programs</p>
+  </div>
+
+  <div class="container">
+    <div class="course-card">
+      <h3>Electrician</h3>
+      <p>Duration: 2 Years<br>Learn electrical wiring, maintenance, and industrial installations.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Fitter</h3>
+      <p>Duration: 2 Years<br>Mechanical tools and fitting techniques used in industries.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Welder</h3>
+      <p>Duration: 1 Year<br>Techniques in gas & arc welding, structural welding basics.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Computer Operator and Programming Assistant (COPA)</h3>
+      <p>Duration: 1 Year<br>Basics of computer operations, MS Office, and programming.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Mechanic (Motor Vehicle)</h3>
+      <p>Duration: 2 Years<br>Repair and maintenance of petrol/diesel vehicles.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Machinist</h3>
+      <p>Duration: 2 Years<br>Operating various machines including lathes and grinders.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Plumber</h3>
+      <p>Duration: 1 Year<br>Water systems, sewage, sanitation installation and repair.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Refrigeration and Air Conditioning</h3>
+      <p>Duration: 2 Years<br>Servicing and maintenance of refrigeration and cooling systems.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Information and Communication Technology System Maintenance</h3>
+      <p>Duration: 2 Years<br>IT hardware, networking, system assembly and repair.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Draughtsman (Civil)</h3>
+      <p>Duration: 2 Years<br>Preparation of civil engineering drawings and site plans.</p>
+    </div>
+
+    <div class="course-card">
+      <h3>Electronic Mechanic</h3>
+      <p>Duration: 2 Years<br>Repair and testing of electronic gadgets and equipment.</p>
+    </div>
+  </div>
+
+</section>
+ 
+</body>
+</html>
