@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>College Fees Payment</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
     }
 
     body {
@@ -30,6 +32,7 @@
     }
 
     .payment-container {
+      margin-top: 50px;
       width: 400px;
       background-color: #fff;
       padding: 40px 30px;
@@ -98,7 +101,25 @@
   </style>
 </head>
 <body>
-  
+   <header>
+    <div class="container1 header-container">
+        <button class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</button>
+        <div class="logo">
+            <div class="logo-text">Barasat-1 Govt ITI</div>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="available-course.html">Available Courses</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="fees-payment.html" class="active">Fees Payment</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="AdminLogin.html">College Login</a></li>
+            </ul>
+        </nav>
+        <a href="Login.html"><button class="join-button">Join Now</button></a>
+    </div>
+</header>
   <div class="payment-container">
     <h2>Fees Payment</h2>
     <form>
@@ -111,9 +132,10 @@
         <option value="debit">Debit Card</option>
       </select>
       <input type="number" placeholder="Amount in ₹" required />
-      <button type="submit">Pay Now</button>
+      <button type="submit" onclick="paynow()">Pay Now</button>
     </form>
     <p class="note">* Make sure your details are correct before submitting.</p>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

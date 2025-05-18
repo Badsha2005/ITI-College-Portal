@@ -1,159 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Available ITI Courses</title>
+  <title>Available ITI Courses | Barasat-1 Govt ITI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore government-recognized technical and vocational training programs at Barasat-1 Govt ITI">
   <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
       color: #333;
-    }
-    header {
-      position: relative;
-      top: 0;
-      }
-      .main-body {
-      margin-top: 10px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
     }
 
     .header-heading {
-      background-color: #2e3a59;
+      background: linear-gradient(135deg, #2e3a59, #3f4d6b);
       color: white;
       text-align: center;
-      padding: 40px 20px 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      padding: 60px 20px 40px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-heading::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #4CAF50, #2196F3, #9C27B0);
     }
 
     header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 15px;
     }
 
     header p {
       margin-top: 10px;
-      font-size: 18px;
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
     }
 
     .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
     }
 
     .course-card {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      transition: transform 0.2s ease;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      transition: all 0.3s ease;
+      border-left: 4px solid #2e3a59;
+      position: relative;
+      overflow: hidden;
     }
 
     .course-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
 
     .course-card h3 {
       margin-top: 0;
       color: #2e3a59;
-      font-size: 22px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
     }
 
     .course-card p {
-      font-size: 14px;
+      font-size: 1rem;
       color: #555;
+      margin-bottom: 20px;
     }
 
+    .course-duration {
+      display: inline-block;
+      background: #f0f4f8;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: #2e3a59;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .course-highlights {
+      margin-top: 15px;
+    }
+
+    .course-highlights li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .course-highlights li::before {
+      content: "✓";
+      color: #4CAF50;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .enquire-btn {
+      display: inline-block;
+      background: #2e3a59;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .enquire-btn:hover {
+      background: #3f4d6b;
+      transform: translateY(-2px);
+    }
+
+    .course-category {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #4CAF50;
+      color: white;
+      padding: 5px 15px;
+      font-size: 0.8rem;
+      border-bottom-left-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      header p {
+        font-size: 1rem;
+      }
+      
+      .container {
+        grid-template-columns: 1fr;
+        padding: 30px 15px;
+      }
+    }
+
+    /* Breadcrumbs */
+   
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="logo">
-        <!-- <div class="logo-icon"></div> -->
-        <div class="logo-text">Barasat Govt ITI</div>
+   <header>
+    <div class="container1 header-container">
+        <button class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</button>
+        <div class="logo">
+            <div class="logo-text">Barasat-1 Govt ITI</div>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="available-course.html" class="active">Available Courses</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="fees-payment.html">Fees Payment</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="AdminLogin.html">College Login</a></li>
+            </ul>
+        </nav>
+        <a href="Login.html"><button class="join-button">Join Now</button></a>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="available-course.html">Available Courses</a></li>
-            <li><a href="internship.html">Internships</a></li>
-            <li><a href="fees-payment.html">Fees Payment</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="AdminLogin.html">College Login</a></li>
-        </ul>
-    </nav>
-    <a href="Login.html"><button class="join-button">Join Now</button></a>
 </header>
-<section class="main-body">
- <div class="header-heading">
-    <h1>Available ITI Courses</h1>
-    <p>Explore government-recognized technical and vocational training programs</p>
-  </div>
-
-  <div class="container">
-    <div class="course-card">
-      <h3>Electrician</h3>
-      <p>Duration: 2 Years<br>Learn electrical wiring, maintenance, and industrial installations.</p>
+  <section class="main-body">
+    
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="available-course.html">Available Courses</a>
+    </div>
+    
+    <div class="header-heading">
+      <h1>Available ITI Courses</h1>
+      <p>Explore government-recognized technical and vocational training programs designed to provide industry-relevant skills and career opportunities</p>
     </div>
 
-    <div class="course-card">
-      <h3>Fitter</h3>
-      <p>Duration: 2 Years<br>Mechanical tools and fitting techniques used in industries.</p>
+    <div class="container">
+      <div class="course-card">
+        <div class="course-category">Engineering</div>
+        <h3>Electrician</h3>
+        <span class="course-duration">Duration: 2 Years</span>
+        <p>Comprehensive training in electrical wiring, maintenance, and industrial installations with hands-on practical experience.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Domestic and industrial wiring</li>
+            <li>Motor winding and maintenance</li>
+            <li>Safety procedures and standards</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">Engineering</div>
+        <h3>Fitter</h3>
+        <span class="course-duration">Duration: 2 Years</span>
+        <p>Master mechanical tools and fitting techniques used across various industries with precision training.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Assembly and fitting of components</li>
+            <li>Precision measurement techniques</li>
+            <li>Machine maintenance</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">Engineering</div>
+        <h3>Welder</h3>
+        <span class="course-duration">Duration: 1 Year</span>
+        <p>Intensive training in gas & arc welding techniques with focus on structural welding applications.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Gas and arc welding techniques</li>
+            <li>Metal cutting processes</li>
+            <li>Quality inspection methods</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">IT & Technology</div>
+        <h3>Computer Operator and Programming Assistant (COPA)</h3>
+        <span class="course-duration">Duration: 1 Year</span>
+        <p>Comprehensive training in computer operations, office automation, and programming fundamentals.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>MS Office and productivity tools</li>
+            <li>Basic programming concepts</li>
+            <li>Internet and networking basics</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">Automobile</div>
+        <h3>Mechanic (Motor Vehicle)</h3>
+        <span class="course-duration">Duration: 2 Years</span>
+        <p>Complete training in repair and maintenance of petrol and diesel vehicles with modern techniques.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Engine repair and maintenance</li>
+            <li>Electrical systems in vehicles</li>
+            <li>Diagnostic techniques</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">Engineering</div>
+        <h3>Machinist</h3>
+        <span class="course-duration">Duration: 2 Years</span>
+        <p>Hands-on training in operating various machines including lathes, milling machines and grinders.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Lathe machine operations</li>
+            <li>Milling and grinding</li>
+            <li>Precision machining</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">Construction</div>
+        <h3>Plumber</h3>
+        <span class="course-duration">Duration: 1 Year</span>
+        <p>Practical training in water systems, sewage, and sanitation installation and repair techniques.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Pipe fitting and installation</li>
+            <li>Sanitary fixture installation</li>
+            <li>Water supply systems</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">Engineering</div>
+        <h3>Refrigeration and Air Conditioning</h3>
+        <span class="course-duration">Duration: 2 Years</span>
+        <p>Comprehensive training in servicing and maintenance of refrigeration and cooling systems.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>AC installation and repair</li>
+            <li>Refrigeration systems</li>
+            <li>Troubleshooting techniques</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">IT & Technology</div>
+        <h3>Information and Communication Technology System Maintenance</h3>
+        <span class="course-duration">Duration: 2 Years</span>
+        <p>Practical training in IT hardware, networking, system assembly, and repair for modern IT infrastructure.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Computer hardware maintenance</li>
+            <li>Basic networking</li>
+            <li>System troubleshooting</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">Civil</div>
+        <h3>Draughtsman (Civil)</h3>
+        <span class="course-duration">Duration: 2 Years</span>
+        <p>Training in preparation of civil engineering drawings and site plans using traditional and CAD methods.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Technical drawing skills</li>
+            <li>CAD software training</li>
+            <li>Construction drawing standards</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-category">Electronics</div>
+        <h3>Electronic Mechanic</h3>
+        <span class="course-duration">Duration: 2 Years</span>
+        <p>Comprehensive training in repair and testing of electronic gadgets and industrial equipment.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Circuit analysis and repair</li>
+            <li>Electronic component testing</li>
+            <li>Modern electronics systems</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
+      
+      <div class="course-card">
+        <div class="course-category">New</div>
+        <h3>Solar Technician</h3>
+        <span class="course-duration">Duration: 1 Year</span>
+        <p>Specialized training in installation and maintenance of solar power systems and equipment.</p>
+        <div class="course-highlights">
+          <ul>
+            <li>Solar panel installation</li>
+            <li>Photovoltaic system maintenance</li>
+            <li>Renewable energy concepts</li>
+          </ul>
+        </div>
+        <a href="enquiry-form.html" class="enquire-btn">Enquire Now</a>
+      </div>
     </div>
 
-    <div class="course-card">
-      <h3>Welder</h3>
-      <p>Duration: 1 Year<br>Techniques in gas & arc welding, structural welding basics.</p>
-    </div>
+  </section>
+   <footer id="contact">
+        <div class="container1">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Barasat Government ITI</h3>
+                    <p>A recognized government institute dedicated to skill development, technical education, and career building for aspiring professionals.</p>
+                    <div class="social-links">
+                        <a href="tel:+911234567890" title="Call Us"><i class="fas fa-phone"></i></a>
+                        <a href="https://www.facebook.com/Barasat1govtITIOfficial/" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:bgiti@gmail.com" title="Email Us"><i class="far fa-envelope"></i></a>
+                        <a href="https://goo.gl/maps/example" target="_blank" title="Location"><i class="fas fa-map-marker-alt"></i></a>
+                    </div>
+                </div>
 
-    <div class="course-card">
-      <h3>Computer Operator and Programming Assistant (COPA)</h3>
-      <p>Duration: 1 Year<br>Basics of computer operations, MS Office, and programming.</p>
-    </div>
+                <!-- Useful Links -->
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="notice.html"><i class="fas fa-newspaper"></i> Notices</a></li>
+                        <li><a href="https://scvtwb.in/candreg.aspx"><i class="fas fa-user-graduate"></i> Admission</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> Placement Cell</a></li>
+                        <li><a href="#"><i class="fas fa-industry"></i> Industrial Training</a></li>
+                    </ul>
+                </div>
 
-    <div class="course-card">
-      <h3>Mechanic (Motor Vehicle)</h3>
-      <p>Duration: 2 Years<br>Repair and maintenance of petrol/diesel vehicles.</p>
-    </div>
+                <!-- Campus Activities -->
+                <div class="footer-column">
+                    <h3>Campus Life</h3>
+                    <ul>
+                        <li><a href="event.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="#"><i class="fas fa-running"></i> Sports & Recreation</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> Student Clubs</a></li>
+                    </ul>
+                </div>
 
-    <div class="course-card">
-      <h3>Machinist</h3>
-      <p>Duration: 2 Years<br>Operating various machines including lathes and grinders.</p>
-    </div>
+                <!-- About & Policy -->
+                <div class="footer-column">
+                    <h3>Institute</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="available-course.html"><i class="fas fa-book"></i> Courses Offered</a></li>
+                        <li><a href="enquiry-form.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
 
-    <div class="course-card">
-      <h3>Plumber</h3>
-      <p>Duration: 1 Year<br>Water systems, sewage, sanitation installation and repair.</p>
-    </div>
-
-    <div class="course-card">
-      <h3>Refrigeration and Air Conditioning</h3>
-      <p>Duration: 2 Years<br>Servicing and maintenance of refrigeration and cooling systems.</p>
-    </div>
-
-    <div class="course-card">
-      <h3>Information and Communication Technology System Maintenance</h3>
-      <p>Duration: 2 Years<br>IT hardware, networking, system assembly and repair.</p>
-    </div>
-
-    <div class="course-card">
-      <h3>Draughtsman (Civil)</h3>
-      <p>Duration: 2 Years<br>Preparation of civil engineering drawings and site plans.</p>
-    </div>
-
-    <div class="course-card">
-      <h3>Electronic Mechanic</h3>
-      <p>Duration: 2 Years<br>Repair and testing of electronic gadgets and equipment.</p>
-    </div>
-  </div>
-
-</section>
- 
+            <div class="footer-bottom">
+                <p>&copy; 2016 - 2025 Barasat Government ITI College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

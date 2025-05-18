@@ -5,21 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Register</title>
   <link rel="stylesheet" href="./CSS/LogRegstyle.css">
+  <link rel="stylesheet" href="./CSS/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+   <header>
+    <div class="container1 header-container">
+        <button class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</button>
+        <div class="logo">
+            <div class="logo-text">Barasat-1 Govt ITI</div>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="available-course.html">Available Courses</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                <li><a href="fees-payment.html">Fees Payment</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="AdminLogin.html">College Login</a></li>
+            </ul>
+        </nav>
+        <a href="Login.html"><button class="join-button">Join Now</button></a>
+    </div>
+</header>
   <div class="register-container">
     <div class="register-form">
-      <h2>Register</h2>
-      <form>
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
-        <input type="password" placeholder="Confirm Password" required />
-        <button type="submit">Create Account</button>
-      </form>
-      <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
-    </div>
+  <h2>Register</h2>
+  <form id="registerForm">
+    <input type="text" id="fullName" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="tel" id="phone" placeholder="Mobile Number" pattern="[0-9]{10}" required />
+    
+    <select id="course" required>
+      <option value="">Select Course</option>
+      <option value="Electrician">Electrician</option>
+      <option value="Fitter">Fitter</option>
+      <option value="Welder">Welder</option>
+      <option value="COPA">COPA</option>
+      <option value="Others">Others</option>
+    </select>
+
+    <input type="password" id="password" placeholder="Password" required />
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+
+
+    <button type="submit" onclick="signUp()">Create Account</button>
+  </form>
+
+  <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+  <p id="registerSuccess" style="color: green; display: none;">Registration successful!</p>
+</div>
+
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
