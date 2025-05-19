@@ -76,7 +76,7 @@ input:focus::before {
 }
 
 button {
-    width: 100%;
+    /* width: 100%; */
     padding: 12px;
     background-color: #4e54c8;
     color: white;
