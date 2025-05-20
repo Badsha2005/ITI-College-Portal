@@ -76,7 +76,7 @@ input:focus::before {
 button {
     /* width: 100%; */
     padding: 12px;
-    background-color: #4e54c8;
+    background:linear-gradient(45deg, rgb(0, 217, 255), #0abd13);;
     color: white;
     border: none;
     border-radius: 8px;
@@ -86,7 +86,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(45deg, rgb(0, 217, 255), #0abd13);
+    background: linear-gradient(45deg, rgb(0, 207, 255), #0abd13);
 }
 
 .forgot-password {
