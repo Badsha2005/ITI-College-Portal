@@ -1,151 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barasat Govt ITI - Notices</title>
+    <title>Barasat-1 Govt ITI - Notices</title>
     <link rel="stylesheet" href="./CSS/styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    background-color: #f4f6f9;
-    color: #333;
-    padding: 20px;
-}
+        body {
+            background-color: #f4f6f9;
+            color: #333;
 
-.notice-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
+        }
 
-.notice-header h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-}
+        .notice-header {
+            text-align: center;
+            margin-bottom: 30px;
 
-.notice-header p {
-    color: #555;
-    font-size: 1.1rem;
-    margin-top: 10px;
-}
+        }
 
-.notice-container {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+        .notice-header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
 
-.notice-card {
-    background: white;
-    padding: 20px 25px;
-    border-left: 5px solid #007bff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
+        .notice-header p {
+            color: #555;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
 
-.notice-card:hover {
-    transform: scale(1.01);
-}
+        .notice-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-.notice-card h3 {
-    color: #007bff;
-    margin-bottom: 10px;
-}
+        .notice-card {
+            background: white;
+            padding: 20px 25px;
+            border-left: 5px solid #007bff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
 
-.notice-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
+        .notice-card:hover {
+            transform: scale(1.01);
+        }
 
-.notice-date {
-    display: block;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #777;
-}
+        .notice-card h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
 
-.notice-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.95rem;
-    color: #777;
-}
+        .notice-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
 
+        .notice-date {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .notice-footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.95rem;
+            color: #777;
+        }
     </style>
 </head>
+
 <body>
     <header>
-    <div class="container1 header-container">
-        <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
-        <div class="logo">
-            <div class="logo-text">Barasat-1 Govt ITI</div>
+        <div class="container1 header-container">
+            <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
+            <div class="logo">
+                <div class="logo-text">Barasat-1 Govt ITI</div>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Student Services</a>
+                        <ul>
+                            <li><a href="available-course.html">Available Courses</a></li>
+                            <li><a href="internship.html">Internships</a></li>
+                            <li><a href="fees-payment.html">Fees Payment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="active">Activities</a>
+                        <ul>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="notice.html" class="active">Notice</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="AdminLogin.html">College Login</a></li>
+                </ul>
+            </nav>
+            <a href="Login.html"><button class="join-button">Join Now</button></a>
         </div>
-        <nav class="main-nav" id="main-nav">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="available-course.html">Available Courses</a></li>
-                <li><a href="internship.html">Internships</a></li>
-                <li><a href="fees-payment.html">Fees Payment</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="AdminLogin.html">College Login</a></li>
-            </ul>
-        </nav>
-        <a href="Login.html"><button class="join-button">Join Now</button></a>
-    </div>
-</header>
-    <section class="main-body"> 
-         <div class="breadcrumb">
-      <a href="index.html">Home</a>
-      <span>/</span>
-      <a href="notice.html">Notice</a>
-    </div>
+    </header>
+    <section class="main-body">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="notice.html" class="active">Notice</a>
+        </div>
         <div class="notice-header">
-        <h1>📢 Official Notices</h1>
-        <p>Stay informed with the latest announcements from Barasat Government ITI</p>
-    </div>
-
-    <main class="notice-container">
-        <div class="notice-card">
-            <h3>⚠️ Semester Exam Dates Announced</h3>
-            <p>The final semester exams will commence from <strong>June 10, 2025</strong>. Students are advised to download their admit cards.</p>
-            <span class="notice-date">Posted on: May 5, 2025</span>
+            <h1>📢 Official Notices</h1>
+            <p>Stay informed with the latest announcements from Barasat Government ITI</p>
         </div>
 
-        <div class="notice-card">
-            <h3>✅ Online Admission Open for 2025-2026</h3>
-            <p>Admissions for new ITI trades are now open. Apply online through the official portal before <strong>June 30, 2025</strong>.</p>
-            <span class="notice-date">Posted on: May 1, 2025</span>
-        </div>
+        <main class="notice-container">
+            <div class="notice-card">
+                <h3>⚠️ Semester Exam Dates Announced</h3>
+                <p>The final semester exams will commence from <strong>June 10, 2025</strong>. Students are advised to
+                    download their admit cards.</p>
+                <span class="notice-date">Posted on: May 5, 2025</span>
+            </div>
 
-        <div class="notice-card">
-            <h3>🧪 Practical Exam Schedule</h3>
-            <p>Practical exams for Electrician, Fitter, and Welder trades will be conducted between <strong>May 20 to May 30</strong>.</p>
-            <span class="notice-date">Posted on: April 28, 2025</span>
-        </div>
-    </main></section>
-      <footer id="contact">
+            <div class="notice-card">
+                <h3>✅ Online Admission Open for 2025-2026</h3>
+                <p>Admissions for new ITI trades are now open. Apply online through the official portal before
+                    <strong>June 30, 2025</strong>.</p>
+                <span class="notice-date">Posted on: May 1, 2025</span>
+            </div>
+
+            <div class="notice-card">
+                <h3>🧪 Practical Exam Schedule</h3>
+                <p>Practical exams for Electrician, Fitter, and Welder trades will be conducted between <strong>May 20
+                        to May 30</strong>.</p>
+                <span class="notice-date">Posted on: April 28, 2025</span>
+            </div>
+        </main>
+    </section>
+   <footer id="contact">
         <div class="container1">
             <div class="footer-grid">
                 <div class="footer-column">
                     <h3>Barasat Government ITI</h3>
-                    <p>A recognized government institute dedicated to skill development, technical education, and career building for aspiring professionals.</p>
+                    <p>A recognized government institute dedicated to skill development, technical education, and career
+                        building for aspiring professionals.</p>
                     <div class="social-links">
                         <a href="tel:+911234567890" title="Call Us"><i class="fas fa-phone"></i></a>
                         <a href="https://www.facebook.com/Barasat1govtITIOfficial/" target="_blank" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="mailto:bgiti@gmail.com" title="Email Us"><i class="far fa-envelope"></i></a>
-                        <a href="https://goo.gl/maps/example" target="_blank" title="Location"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="https://maps.app.goo.gl/R5zdEmybayNLPKfK8" target="_blank" title="Location"><i
+                                class="fas fa-map-marker-alt"></i></a>
                     </div>
                 </div>
 
@@ -154,8 +176,9 @@ body {
                     <h3>Useful Links</h3>
                     <ul>
                         <li><a href="notice.html"><i class="fas fa-newspaper"></i> Notices</a></li>
-                        <li><a href="https://scvtwb.in/candreg.aspx"><i class="fas fa-user-graduate"></i> Admission</a></li>
-                        <li><a href="#"><i class="fas fa-briefcase"></i> Placement Cell</a></li>
+                        <li><a href="https://scvtwb.in/candreg.aspx"><i class="fas fa-user-graduate"></i> Admission</a>
+                        </li>
+                        <li><a href="placement-cell.html"><i class="fas fa-briefcase"></i> Placement Cell</a></li>
                         <li><a href="#"><i class="fas fa-industry"></i> Industrial Training</a></li>
                     </ul>
                 </div>
@@ -182,13 +205,23 @@ body {
                     </ul>
                 </div>
             </div>
-
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates on placements, events, and more.</p>
+                <form>
+                    <input type="email" placeholder="Your Email"
+                        style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;">
+                    <button type="submit"
+                        style="padding: 10px 20px; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+                </form>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2016 - 2025 Barasat Government ITI College. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

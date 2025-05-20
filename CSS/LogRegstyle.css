@@ -14,9 +14,7 @@ body {
             #ff0057);
     background-size: 300% 300%;
     animation: gradientAnimation 10s ease infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 
 .login-container {
@@ -106,7 +104,6 @@ button:hover {
 }
 
 
-/* Keyframe for background gradient animation */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;

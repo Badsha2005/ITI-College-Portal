@@ -66,6 +66,11 @@ function logIn() {
   if (email === adminEmail && password === adminPassword) {
     alert("Login successful!");
 
+
+    window.location.href = "dashboard.html";
+    // Close the login modal after successful login
+
+
   } else {
     alert("Invalid User ID or Password.");
   }
@@ -101,6 +106,9 @@ function signUp() {
   setTimeout(() => {
     document.getElementById("registerSuccess").style.display = "none";
   }, 5000);
+  // Redirect to thank you page
+  window.location.href = "thank-you.html";
+
 }
 function studentQuery(event) {
   event.preventDefault(); // Prevent form from submitting normally
@@ -118,14 +126,14 @@ function studentQuery(event) {
     return;
   }
 
- alert(
-  "Enquiry Submitted Successfully!\n\n" +
-  "Name: " + name + "\n" +
-  "Phone: " + phone + "\n" +
-  "Email: " + email + "\n" +
-  "Course: " + course + "\n" +
-  "Message: " + message
-);
+  alert(
+    "Enquiry Submitted Successfully!\n\n" +
+    "Name: " + name + "\n" +
+    "Phone: " + phone + "\n" +
+    "Email: " + email + "\n" +
+    "Course: " + course + "\n" +
+    "Message: " + message
+  );
 
 
   // Show success message
@@ -133,11 +141,18 @@ function studentQuery(event) {
 
   // Clear form
   document.getElementById("enquiryForm").reset();
+  //thank you page redirect
+
+
 
   // Optionally hide message after a few seconds
   setTimeout(() => {
     document.getElementById("successMsg").style.display = "none";
   }, 5000);
+  setTimeout(() => {
+    window.location.href = "thank-you.html"; // Redirect to thank you page
+  }, 5000);
+
 }
 
 // Attach the event listener after page loads
@@ -159,20 +174,48 @@ function paynow(event) {
   }
 
   // Simulate a payment process (replace with actual payment gateway logic)
-alert(
-  "Payment Details:\n" +
-  "Registration No: " + regNumber + "\n" +
-  "Payment Mode: " + paymentMode + "\n" +
-  "Amount: ₹" + amount
-);
+  alert(
+    "Payment Details:\n" +
+    "Registration No: " + regNumber + "\n" +
+    "Payment Mode: " + paymentMode + "\n" +
+    "Amount: ₹" + amount
+  );
 
 
   alert("Payment successful! Thank you.");
   form.reset();
+  setTimeout(() => {
+    window.location.href = "thank-you.html"; // Redirect to thank you page
+  }, 2000);
 }
 
 // Add listener after DOM loads
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".payment-container form");
   form.addEventListener("submit", paynow);
+});
+document.getElementById('newsletter-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var email = document.getElementById('newsletter-email').value.trim();
+  var messageDiv = document.getElementById('newsletter-message');
+
+  // Simple email validation
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === "") {
+    messageDiv.style.color = "red";
+    messageDiv.textContent = "Please enter your email address.";
+    return;
+  }
+  if (!emailPattern.test(email)) {
+    messageDiv.style.color = "red";
+    messageDiv.textContent = "Please enter a valid email address.";
+    return;
+  }
+  messageDiv.style.color = "green";
+  messageDiv.textContent = "Thank you for subscribing!";
+  alert('Newsletter subscription successful!');
+  window.location.href = "index.html";
+  document.getElementById('newsletter-form').reset();
+
+
 });

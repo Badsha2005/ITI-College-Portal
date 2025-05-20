@@ -26,12 +26,11 @@
       );
       background-size: 300% 300%;
       animation: gradientAnimation 10s ease infinite;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      
     }
-
+    
     .payment-container {
+      margin: 0 auto;
       margin-top: 50px;
       width: 400px;
       background-color: #fff;
@@ -39,6 +38,7 @@
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       text-align: center;
+      
     }
 
     .payment-container h2 {
@@ -98,25 +98,36 @@
   </style>
 </head>
 <body>
-   <header>
-    <div class="container1 header-container">
-        <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
-        <div class="logo">
-            <div class="logo-text">Barasat-1 Govt ITI</div>
+  <header>
+        <div class="container1 header-container">
+            <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
+            <div class="logo">
+                <div class="logo-text">Barasat-1 Govt ITI</div>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="" class="active">Student Services</a>
+                        <ul>
+                            <li><a href="available-course.html">Available Courses</a></li>
+                            <li><a href="internship.html">Internships</a></li>
+                            <li><a href="fees-payment.html" class="active">Fees Payment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Activities</a>
+                        <ul>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="notice.html">Notice</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="AdminLogin.html">College Login</a></li>
+                </ul>
+            </nav>
+            <a href="Login.html"><button class="join-button">Join Now</button></a>
         </div>
-        <nav class="main-nav" id="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="available-course.html">Available Courses</a></li>
-                <li><a href="internship.html">Internships</a></li>
-                <li><a href="fees-payment.html" class="active">Fees Payment</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="AdminLogin.html">College Login</a></li>
-            </ul>
-        </nav>
-        <a href="Login.html"><button class="join-button">Join Now</button></a>
-    </div>
-</header>
+    </header>
   <div class="payment-container">
     <h2>Fees Payment</h2>
     <form>

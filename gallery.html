@@ -1,143 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Barasat-1 Govt ITI</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        .gallery-section {
-  padding: 60px 20px;
-  background-color: #f1f1f1;
-  text-align: center;
-}
-header {
-      position: relative;
-      top: 0;
-      }
-      .main-body {
-      margin-top: 10px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Barasat-1 Govt ITI</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .gallery-section {
+      background-color: #f1f1f1;
     }
 
-.section-header h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #222;
-}
+    .section-header h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #222;
+    }
 
-.section-header p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 40px;
-}
+    .section-header p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 40px;
+    }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 0 10px;
-}
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
 
-.gallery-item {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: 0.3s ease;
-}
+    .gallery-item {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
 
-.gallery-item:hover {
-  transform: scale(1.05);
-}
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
 
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-    </style>
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <div class="container1 header-container">
-        <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
-        <div class="logo">
-            <div class="logo-text">Barasat-1 Govt ITI</div>
-        </div>
-        <nav class="main-nav" id="main-nav">
+      <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
+      <div class="logo">
+        <div class="logo-text">Barasat-1 Govt ITI</div>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Student Services</a>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="available-course.html">Available Courses</a></li>
-                <li><a href="internship.html">Internships</a></li>
-                <li><a href="fees-payment.html">Fees Payment</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="AdminLogin.html">College Login</a></li>
+              <li><a href="available-course.html">Available Courses</a></li>
+              <li><a href="internship.html">Internships</a></li>
+              <li><a href="fees-payment.html">Fees Payment</a></li>
             </ul>
-        </nav>
-        <a href="Login.html"><button class="join-button">Join Now</button></a>
+          </li>
+          <li><a href="">Activities</a>
+            <ul>
+              <li><a href="event.html">Events</a></li>
+              <li><a href="notice.html">Notice</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="AdminLogin.html">College Login</a></li>
+        </ul>
+      </nav>
+      <a href="Login.html"><button class="join-button">Join Now</button></a>
     </div>
-</header>
-    <section class="gallery-section main-body" id="gallery">
+  </header>
+  <section class="gallery-section main-body" id="gallery">
 
-       <div class="breadcrumb">
+    <div class="breadcrumb">
       <a href="index.html">Home</a>
       <span>/</span>
-      <a href="gallery.html">Gallery</a>
+      <a href="gallery.html" class="active">Gallery</a>
     </div>
-        <div class="section-header">
-          <h2>Our Gallery</h2>
-          <p>Explore the highlights of our events, workshops, and student activities.</p>
-        </div>
-      
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="Img/img1.jpg" alt="Gallery Image 1" />
-          </div>
-      
-          <div class="gallery-item">
-            <img src="Img/img2.jpg" alt="Gallery Image 2" />
-          </div>
-      
-          <div class="gallery-item">
-            <img src="Img/img3.jpg" alt="Gallery Image 3" />
-          </div>
-          <div class="gallery-item">
-            <img src="Img/img4.jpg" alt="Gallery Image 4" />
-          </div>
-      
-          <div class="gallery-item">
-            <img src="Img/img5.jpg" alt="Gallery Image 5" />
-          </div>
-      
-          <div class="gallery-item">
-            <img src="Img/img6.jpg" alt="Gallery Image 6" />
-          </div>
-      
-          <div class="gallery-item">
-            <img src="Img/img7.jpg" alt="Gallery Image 7" />
-          </div>
-      
-          <div class="gallery-item">
-            <img src="Img/img8.jpg" alt="Gallery Image 8" />
-          </div>
-        </div>
-      </section>
-        <footer id="contact">
+    <div class="section-header">
+      <h2>Our Gallery</h2>
+      <p>Explore the highlights of our events, workshops, and student activities.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="Img/img1.jpg" alt="Gallery Image 1" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="Img/img2.jpg" alt="Gallery Image 2" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="Img/img3.jpg" alt="Gallery Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="Img/img4.jpg" alt="Gallery Image 4" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="Img/img5.jpg" alt="Gallery Image 5" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="Img/img6.jpg" alt="Gallery Image 6" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="Img/img7.jpg" alt="Gallery Image 7" />
+      </div>
+
+      <div class="gallery-item">
+        <img src="Img/img8.jpg" alt="Gallery Image 8" />
+      </div>
+    </div>
+  </section>
+    <footer id="contact">
         <div class="container1">
             <div class="footer-grid">
                 <div class="footer-column">
                     <h3>Barasat Government ITI</h3>
-                    <p>A recognized government institute dedicated to skill development, technical education, and career building for aspiring professionals.</p>
+                    <p>A recognized government institute dedicated to skill development, technical education, and career
+                        building for aspiring professionals.</p>
                     <div class="social-links">
                         <a href="tel:+911234567890" title="Call Us"><i class="fas fa-phone"></i></a>
                         <a href="https://www.facebook.com/Barasat1govtITIOfficial/" target="_blank" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="mailto:bgiti@gmail.com" title="Email Us"><i class="far fa-envelope"></i></a>
-                        <a href="https://goo.gl/maps/example" target="_blank" title="Location"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="https://maps.app.goo.gl/R5zdEmybayNLPKfK8" target="_blank" title="Location"><i
+                                class="fas fa-map-marker-alt"></i></a>
                     </div>
                 </div>
 
@@ -146,8 +153,9 @@ header {
                     <h3>Useful Links</h3>
                     <ul>
                         <li><a href="notice.html"><i class="fas fa-newspaper"></i> Notices</a></li>
-                        <li><a href="https://scvtwb.in/candreg.aspx"><i class="fas fa-user-graduate"></i> Admission</a></li>
-                        <li><a href="#"><i class="fas fa-briefcase"></i> Placement Cell</a></li>
+                        <li><a href="https://scvtwb.in/candreg.aspx"><i class="fas fa-user-graduate"></i> Admission</a>
+                        </li>
+                        <li><a href="placement-cell.html"><i class="fas fa-briefcase"></i> Placement Cell</a></li>
                         <li><a href="#"><i class="fas fa-industry"></i> Industrial Training</a></li>
                     </ul>
                 </div>
@@ -174,12 +182,23 @@ header {
                     </ul>
                 </div>
             </div>
-
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates on placements, events, and more.</p>
+                <form>
+                    <input type="email" placeholder="Your Email"
+                        style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;">
+                    <button type="submit"
+                        style="padding: 10px 20px; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+                </form>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2016 - 2025 Barasat Government ITI College. All rights reserved.</p>
             </div>
         </div>
-    </footer> 
-    <script src="script.js"></script>
+    </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

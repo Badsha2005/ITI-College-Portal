@@ -95,24 +95,35 @@
 </head>
 <body>
   <header>
-    <div class="container1 header-container">
-        <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
-        <div class="logo">
-            <div class="logo-text">Barasat-1 Govt ITI</div>
+        <div class="container1 header-container">
+            <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
+            <div class="logo">
+                <div class="logo-text">Barasat-1 Govt ITI</div>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Student Services</a>
+                        <ul>
+                            <li><a href="available-course.html">Available Courses</a></li>
+                            <li><a href="internship.html">Internships</a></li>
+                            <li><a href="fees-payment.html">Fees Payment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Activities</a>
+                        <ul>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="notice.html">Notice</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="AdminLogin.html">College Login</a></li>
+                </ul>
+            </nav>
+            <a href="Login.html"><button class="join-button">Join Now</button></a>
         </div>
-        <nav class="main-nav" id="main-nav">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="available-course.html">Available Courses</a></li>
-                <li><a href="internship.html">Internships</a></li>
-                <li><a href="fees-payment.html">Fees Payment</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="AdminLogin.html">College Login</a></li>
-            </ul>
-        </nav>
-        <a href="Login.html"><button class="join-button">Join Now</button></a>
-    </div>
-</header>
+    </header>
   <div class="form-container">
     <h2>Enquiry Form</h2>
     <p class="success-message" id="successMsg">Thank you! We will contact you soon.</p>

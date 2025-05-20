@@ -357,30 +357,41 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="container1 header-container">
-        <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
-        <div class="logo">
-            <div class="logo-text">Barasat-1 Govt ITI</div>
+ <header>
+        <div class="container1 header-container">
+            <h2 class="toggle-menu" aria-label="Menu" onclick="menuOpen()">☰</h2>
+            <div class="logo">
+                <div class="logo-text">Barasat-1 Govt ITI</div>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="" class="active">Student Services</a>
+                        <ul>
+                            <li><a href="available-course.html">Available Courses</a></li>
+                            <li><a href="internship.html" class="active">Internships</a></li>
+                            <li><a href="fees-payment.html">Fees Payment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Activities</a>
+                        <ul>
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="notice.html">Notice</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="AdminLogin.html">College Login</a></li>
+                </ul>
+            </nav>
+            <a href="Login.html"><button class="join-button">Join Now</button></a>
         </div>
-        <nav class="main-nav" id="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="available-course.html">Available Courses</a></li>
-                <li><a href="internship.html" class="active">Internships</a></li>
-                <li><a href="fees-payment.html">Fees Payment</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="AdminLogin.html">College Login</a></li>
-            </ul>
-        </nav>
-        <a href="Login.html"><button class="join-button">Join Now</button></a>
-    </div>
-</header>
+    </header>
 <section class="main-body"> 
    <div class="breadcrumb">
       <a href="index.html">Home</a>
       <span>/</span>
-      <a href="internship.html">Internship Opportunities</a>
+      <a href="internship.html" class="active">Internship Opportunities</a>
     </div>
     
   <div class="header-heading">
@@ -602,19 +613,21 @@
     </div>
   </div>
 </section>
-    <footer id="contact">
+     <footer id="contact">
         <div class="container1">
             <div class="footer-grid">
                 <div class="footer-column">
                     <h3>Barasat Government ITI</h3>
-                    <p>A recognized government institute dedicated to skill development, technical education, and career building for aspiring professionals.</p>
+                    <p>A recognized government institute dedicated to skill development, technical education, and career
+                        building for aspiring professionals.</p>
                     <div class="social-links">
                         <a href="tel:+911234567890" title="Call Us"><i class="fas fa-phone"></i></a>
                         <a href="https://www.facebook.com/Barasat1govtITIOfficial/" target="_blank" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="mailto:bgiti@gmail.com" title="Email Us"><i class="far fa-envelope"></i></a>
-                        <a href="https://goo.gl/maps/example" target="_blank" title="Location"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="https://maps.app.goo.gl/R5zdEmybayNLPKfK8" target="_blank" title="Location"><i
+                                class="fas fa-map-marker-alt"></i></a>
                     </div>
                 </div>
 
@@ -623,8 +636,9 @@
                     <h3>Useful Links</h3>
                     <ul>
                         <li><a href="notice.html"><i class="fas fa-newspaper"></i> Notices</a></li>
-                        <li><a href="https://scvtwb.in/candreg.aspx"><i class="fas fa-user-graduate"></i> Admission</a></li>
-                        <li><a href="#"><i class="fas fa-briefcase"></i> Placement Cell</a></li>
+                        <li><a href="https://scvtwb.in/candreg.aspx"><i class="fas fa-user-graduate"></i> Admission</a>
+                        </li>
+                        <li><a href="placement-cell.html"><i class="fas fa-briefcase"></i> Placement Cell</a></li>
                         <li><a href="#"><i class="fas fa-industry"></i> Industrial Training</a></li>
                     </ul>
                 </div>
@@ -651,12 +665,22 @@
                     </ul>
                 </div>
             </div>
-
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates on placements, events, and more.</p>
+                <form>
+                    <input type="email" placeholder="Your Email"
+                        style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;">
+                    <button type="submit"
+                        style="padding: 10px 20px; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+                </form>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2016 - 2025 Barasat Government ITI College. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
     
 </body>
