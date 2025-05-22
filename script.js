@@ -67,7 +67,7 @@ function logIn() {
     alert("Login successful!");
 
 
-    window.location.href = "dashboard.html";
+    window.location.href = "index.html";
     // Close the login modal after successful login
 
 
@@ -84,7 +84,6 @@ function signUp() {
   const course = document.getElementById("course").value;
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
-  const termsAccepted = document.getElementById("terms").checked;
 
   // Check if passwords match
   if (password !== confirmPassword) {
@@ -92,11 +91,7 @@ function signUp() {
     return;
   }
 
-  if (!termsAccepted) {
-    alert("You must accept the Terms & Conditions.");
-    return;
-  }
-
+  
   document.getElementById("registerSuccess").style.display = "block";
 
   // Reset the form
@@ -107,7 +102,7 @@ function signUp() {
     document.getElementById("registerSuccess").style.display = "none";
   }, 5000);
   // Redirect to thank you page
-  window.location.href = "thank-you.html";
+  window.location.href = "Login.html";
 
 }
 function studentQuery(event) {
@@ -180,13 +175,11 @@ function paynow(event) {
     "Payment Mode: " + paymentMode + "\n" +
     "Amount: ₹" + amount
   );
-
-
-  alert("Payment successful! Thank you.");
+return regNumber, paymentMode, amount;
   form.reset();
   setTimeout(() => {
     window.location.href = "thank-you.html"; // Redirect to thank you page
-  }, 2000);
+  }, 500);
 }
 
 // Add listener after DOM loads

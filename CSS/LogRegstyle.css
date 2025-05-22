@@ -86,7 +86,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(45deg, rgb(0, 207, 255), #0abd13);
+    background: linear-gradient(45deg, #580abd, rgb(0, 207, 255));
 }
 
 .forgot-password {

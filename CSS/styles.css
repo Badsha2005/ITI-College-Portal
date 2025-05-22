@@ -191,10 +191,11 @@ header {
 }
 
 .join-button {
-    background-color: #3498db;
+    background:linear-gradient(45deg, rgb(0, 217, 255), #0abd13);;
     color: white;
     border: none;
     padding: 0.7rem 1.5rem;
+    margin-right: -1rem;
     border-radius: 0.5rem;
     font-weight: 600;
     cursor: pointer;
@@ -202,71 +203,11 @@ header {
 }
 
 .join-button:hover {
-    background-color: #08d33b;
+   background: linear-gradient(45deg, #580abd, rgb(0, 207, 255));
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 992px) {
-    .toggle-menu {
-        display: block;
-    }
-    
-    .main-nav {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 80%;
-        max-width: 300px;
-        height: 100vh;
-        background-color: #ffffff;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-        transition: left 0.3s ease;
-        z-index: 1000;
-        overflow-y: auto;
-    }
-    
-    .main-nav.active {
-        left: 0;
-    }
-    
-    .main-nav ul {
-        flex-direction: column;
-        padding: 2rem;
-    }
-    
-    .main-nav li {
-        margin: 0.5rem 0;
-    }
-    
-    .main-nav li ul {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        padding-left: 1rem;
-        display: none;
-    }
-    
-    .main-nav li:hover ul {
-        display: block;
-    }
-    
-    .join-button {
-        display: none;
-    }
-}
-
-@media (max-width: 576px) {
-    .container1.header-container {
-        padding: 1rem;
-    }
-    
-    .logo-text {
-        font-size: 1.2rem;
-    }
-}
 .menu-backdrop {
   position: fixed;
   top: 0;
@@ -1174,7 +1115,7 @@ footer {
         flex-direction: row;
     }
     .logo-text{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
 
     }
 .toggle-menu {
@@ -1258,7 +1199,6 @@ footer {
         justify-content: center;
     }
 
-    section {
-        padding: 60px 0;
-    }
+    
 }
+
