@@ -143,10 +143,10 @@ function studentQuery(event) {
   // Optionally hide message after a few seconds
   setTimeout(() => {
     document.getElementById("successMsg").style.display = "none";
-  }, 5000);
+  }, 2000);
   setTimeout(() => {
     window.location.href = "thank-you.html"; // Redirect to thank you page
-  }, 5000);
+  }, 2000);
 
 }
 
@@ -175,7 +175,7 @@ function paynow(event) {
     "Payment Mode: " + paymentMode + "\n" +
     "Amount: ₹" + amount
   );
-return regNumber, paymentMode, amount;
+
   form.reset();
   setTimeout(() => {
     window.location.href = "thank-you.html"; // Redirect to thank you page
