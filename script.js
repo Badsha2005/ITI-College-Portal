@@ -179,7 +179,7 @@ function paynow(event) {
   form.reset();
   setTimeout(() => {
     window.location.href = "thank-you.html"; // Redirect to thank you page
-  }, 500);
+  }, 1000);
 }
 
 // Add listener after DOM loads
